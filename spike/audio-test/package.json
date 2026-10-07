@@ -1,0 +1,19 @@
+{
+  "name": "sunet-simplu-audio-test",
+  "productName": "SunetSimpluAudioTest",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Throwaway test of the audio-device assumptions in DESIGN.md, section 9.",
+  "author": "Programming Gurus",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "selftest": "electron . --selftest"
+  },
+  "devDependencies": {
+    "electron": "^44.6.0"
+  },
+  "dependencies": {
+    "wavesurfer.js": "^8.0.2"
+  }
+}
