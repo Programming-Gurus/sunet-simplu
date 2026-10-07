@@ -1,0 +1,33 @@
+# The installers of Sunet Simplu (DESIGN.md, section 9).
+appId: ro.programminggurus.sunetsimplu
+productName: Sunet Simplu
+copyright: Programming Gurus
+directories:
+  output: dist
+  buildResources: build
+files:
+  - out/**/*
+  - package.json
+asar: true
+# The licence of the icons of the light groups (Material Design Icons) goes with the app.
+extraResources:
+  - from: node_modules/@mdi/js/LICENSE
+    to: licenses/material-design-icons.txt
+# Copies the installers of a build to APP_BUILDS_DIR, if set (README, Build the Mac installer).
+afterAllArtifactBuild: scripts/publish-build.cjs
+mac:
+  category: public.app-category.music
+  target:
+    - target: dmg
+      arch: arm64
+  # No Apple developer certificate: the app gets a local signature. macOS asks one time
+  # for approval on a different computer (DESIGN.md, known limits).
+  identity: '-'
+  hardenedRuntime: false
+  gatekeeperAssess: false
+dmg:
+  title: Sunet Simplu
+win:
+  target:
+    - target: nsis
+      arch: x64

@@ -1,0 +1,151 @@
+{
+  "formatVersion": 1,
+  "id": "2fa396e0-3cf1-47d7-bab1-267ad840fadb",
+  "name": "Test straturi",
+  "fadeIn": 0.4,
+  "fadeOut": 0.4,
+  "songs": [
+    {
+      "id": "2bd46072-32ab-441f-91d6-0f83a250fb60",
+      "name": "ploaie.wav",
+      "file": "2bd46072-32ab-441f-91d6-0f83a250fb60.wav",
+      "duration": 6
+    },
+    {
+      "id": "583bc03f-55b0-4a9e-abee-ab5abfcb9c7f",
+      "name": "tema.wav",
+      "file": "583bc03f-55b0-4a9e-abee-ab5abfcb9c7f.wav",
+      "duration": 6
+    },
+    {
+      "id": "75e0d4f9-ef3e-4142-90e7-a4a87882d332",
+      "name": "tunet.wav",
+      "file": "75e0d4f9-ef3e-4142-90e7-a4a87882d332.wav",
+      "duration": 2
+    },
+    {
+      "id": "dc76b7c5-c472-449f-b862-bc6d1cb8a5ed",
+      "name": "vant.wav",
+      "file": "dc76b7c5-c472-449f-b862-bc6d1cb8a5ed.wav",
+      "duration": 6
+    }
+  ],
+  "steps": [
+    {
+      "id": "8d91aa83-0e32-4dfe-bce8-ee519e52fa2a",
+      "kind": "song",
+      "title": "Ploaie",
+      "notes": "",
+      "songId": "2bd46072-32ab-441f-91d6-0f83a250fb60",
+      "songSettings": {
+        "2bd46072-32ab-441f-91d6-0f83a250fb60": {
+          "start": null,
+          "end": null,
+          "limit": null,
+          "volume": 100,
+          "loop": true,
+          "continue": false,
+          "fadesIn": true,
+          "fadesOut": true,
+          "background": true
+        }
+      },
+      "stops": []
+    },
+    {
+      "id": "56c380a5-6b60-465b-9d6a-8ca26c354310",
+      "kind": "song",
+      "title": "Tema",
+      "notes": "",
+      "songId": "583bc03f-55b0-4a9e-abee-ab5abfcb9c7f",
+      "songSettings": {
+        "583bc03f-55b0-4a9e-abee-ab5abfcb9c7f": {
+          "start": null,
+          "end": null,
+          "limit": null,
+          "volume": 80,
+          "loop": true,
+          "continue": false,
+          "fadesIn": true,
+          "fadesOut": true,
+          "background": false
+        }
+      },
+      "stops": []
+    },
+    {
+      "id": "7179770f-c692-4dfa-bd20-526186cbf241",
+      "kind": "song",
+      "title": "Tunet",
+      "notes": "",
+      "songId": "75e0d4f9-ef3e-4142-90e7-a4a87882d332",
+      "songSettings": {
+        "75e0d4f9-ef3e-4142-90e7-a4a87882d332": {
+          "start": null,
+          "end": null,
+          "limit": null,
+          "volume": 100,
+          "loop": false,
+          "continue": false,
+          "fadesIn": false,
+          "fadesOut": false,
+          "background": false
+        }
+      },
+      "stops": []
+    },
+    {
+      "id": "edb21dc9-7cf7-4927-bd20-455a370d31db",
+      "kind": "stop",
+      "title": "",
+      "notes": "",
+      "songId": null,
+      "songSettings": {},
+      "stops": []
+    },
+    {
+      "id": "f8a4f37d-3ce2-40c4-b1f7-2cadcae25663",
+      "kind": "stop",
+      "title": "Oprește ploaia și tema",
+      "notes": "",
+      "songId": null,
+      "songSettings": {},
+      "stops": [
+        "56c380a5-6b60-465b-9d6a-8ca26c354310",
+        "8d91aa83-0e32-4dfe-bce8-ee519e52fa2a"
+      ]
+    },
+    {
+      "id": "f1bb9729-6e35-4953-8286-2c0b6dffaa6e",
+      "kind": "song",
+      "title": "Vânt",
+      "notes": "",
+      "songId": "dc76b7c5-c472-449f-b862-bc6d1cb8a5ed",
+      "songSettings": {
+        "dc76b7c5-c472-449f-b862-bc6d1cb8a5ed": {
+          "start": null,
+          "end": null,
+          "limit": null,
+          "volume": 100,
+          "loop": true,
+          "continue": false,
+          "fadesIn": true,
+          "fadesOut": true,
+          "background": true
+        }
+      },
+      "stops": []
+    },
+    {
+      "id": "cfdfff6c-04b9-48a1-baae-c5a6ff423a24",
+      "kind": "stop",
+      "title": "",
+      "notes": "",
+      "songId": null,
+      "songSettings": {},
+      "stops": []
+    }
+  ],
+  "createdAt": "2026-10-08T10:23:55.883Z",
+  "updatedAt": "2026-10-08T10:23:56.245Z"
+}

@@ -1,0 +1,163 @@
+{
+  "formatVersion": 1,
+  "id": "1a3c9391-5783-4882-bae0-206f3259d5c3",
+  "name": "Livada de vișini",
+  "fadeIn": 1,
+  "fadeOut": 1,
+  "songs": [
+    {
+      "id": "76a84245-43a5-4b17-aa92-2f1436fd34bd",
+      "name": "intrare-public.wav",
+      "file": "76a84245-43a5-4b17-aa92-2f1436fd34bd.wav",
+      "duration": 250
+    },
+    {
+      "id": "3a5b3e14-0c4b-46a6-a054-c9504b94311f",
+      "name": "tema-livezii.wav",
+      "file": "3a5b3e14-0c4b-46a6-a054-c9504b94311f.wav",
+      "duration": 185
+    },
+    {
+      "id": "69260d37-ba4d-427f-849c-5ac24d3f2044",
+      "name": "vals.wav",
+      "file": "69260d37-ba4d-427f-849c-5ac24d3f2044.wav",
+      "duration": 332
+    }
+  ],
+  "steps": [
+    {
+      "id": "f5c25cd2-4337-4e92-a602-c0626d697a93",
+      "kind": "song",
+      "title": "Intrarea publicului",
+      "notes": "Pornește când se deschid ușile sălii.",
+      "songId": "76a84245-43a5-4b17-aa92-2f1436fd34bd",
+      "songSettings": {
+        "76a84245-43a5-4b17-aa92-2f1436fd34bd": {
+          "start": null,
+          "end": null,
+          "limit": null,
+          "volume": 100,
+          "loop": true,
+          "continue": false,
+          "fadesIn": true,
+          "fadesOut": true,
+          "fadeInTime": null,
+          "fadeOutTime": null,
+          "background": false
+        }
+      },
+      "stops": []
+    },
+    {
+      "id": "2351137a-2a0f-40b7-ac31-5093d36c4336",
+      "kind": "note",
+      "title": "Lumini: stinge sala, cald pe scenă",
+      "notes": "După al treilea gong.",
+      "songId": null,
+      "songSettings": {},
+      "stops": []
+    },
+    {
+      "id": "2ae1b687-6ff1-4485-8321-e876d401d645",
+      "kind": "song",
+      "title": "Uvertură",
+      "notes": "Începe pe întuneric, înainte să intre Lopahin.",
+      "songId": "3a5b3e14-0c4b-46a6-a054-c9504b94311f",
+      "songSettings": {
+        "3a5b3e14-0c4b-46a6-a054-c9504b94311f": {
+          "start": null,
+          "end": null,
+          "limit": null,
+          "volume": 100,
+          "loop": true,
+          "continue": false,
+          "fadesIn": true,
+          "fadesOut": true,
+          "fadeInTime": null,
+          "fadeOutTime": null,
+          "background": false
+        }
+      },
+      "stops": []
+    },
+    {
+      "id": "5c6f61f5-754b-4fd6-a5d3-897432a18987",
+      "kind": "song",
+      "title": "Sosirea Ranevskaiei",
+      "notes": "Replica: „Au sosit!” Pornește imediat după replică.",
+      "songId": "3a5b3e14-0c4b-46a6-a054-c9504b94311f",
+      "songSettings": {
+        "3a5b3e14-0c4b-46a6-a054-c9504b94311f": {
+          "start": 12,
+          "end": 160,
+          "limit": null,
+          "volume": 85,
+          "loop": true,
+          "continue": true,
+          "fadesIn": true,
+          "fadesOut": true,
+          "fadeInTime": 20,
+          "fadeOutTime": 1.5,
+          "background": false
+        },
+        "69260d37-ba4d-427f-849c-5ac24d3f2044": {
+          "start": null,
+          "end": null,
+          "limit": null,
+          "volume": 100,
+          "loop": true,
+          "continue": false,
+          "fadesIn": true,
+          "fadesOut": true,
+          "fadeInTime": null,
+          "fadeOutTime": null,
+          "background": false
+        }
+      },
+      "stops": []
+    },
+    {
+      "id": "5d505f58-2c82-4e4d-a58c-c8a3546e917c",
+      "kind": "stop",
+      "title": "",
+      "notes": "Când Ranevskaia se așază pe canapea.",
+      "songId": null,
+      "songSettings": {},
+      "stops": []
+    },
+    {
+      "id": "6d77f7de-f959-4a62-aad5-307fff29f35f",
+      "kind": "note",
+      "title": "Lumini: dimineață, fereastra din stânga",
+      "notes": "Trecere lentă, 10 secunde.",
+      "songId": null,
+      "songSettings": {},
+      "stops": []
+    },
+    {
+      "id": "ea0edfdf-1e32-4b46-8c77-6798cf4a3128",
+      "kind": "song",
+      "title": "",
+      "notes": "Actul III, la ridicarea cortinei.",
+      "songId": "69260d37-ba4d-427f-849c-5ac24d3f2044",
+      "songSettings": {
+        "69260d37-ba4d-427f-849c-5ac24d3f2044": {
+          "start": null,
+          "end": null,
+          "limit": null,
+          "volume": 100,
+          "loop": true,
+          "continue": false,
+          "fadesIn": true,
+          "fadesOut": true,
+          "fadeInTime": null,
+          "fadeOutTime": null,
+          "background": false
+        }
+      },
+      "stops": []
+    }
+  ],
+  "createdAt": "2026-10-08T10:23:36.171Z",
+  "updatedAt": "2026-10-08T14:40:00.000Z"
+}

@@ -1,0 +1,323 @@
+/* The look of Sunet Simplu. Dark, because a booth is dark (DESIGN.md, 3.2). */
+
+:root {
+  color-scheme: dark;
+  --bg: #121110;
+  --surface: #1a1917;
+  --surface-2: #23211e;
+  --line: #34312c;
+  --line-strong: #4a463f;
+  --line-light: #8c857a;
+  --text: #efeae0;
+  --text-warm: #d9cfbd;
+  --text-muted: #b3ab9d;
+  --text-dim: #948d80;
+  /* Amber is the hall: what the audience hears. */
+  --hall: #f2a93b;
+  --hall-ink: #1a1408;
+  --hall-line: #8a6424;
+  --hall-line-soft: #5a4a2c;
+  --hall-bg: #2a2113;
+  /* Blue is the preview: what only the operator hears. */
+  --preview: #6aaee6;
+  --preview-ink: #0e1a24;
+  --danger: #f0907e;
+  --danger-line: #7a3b30;
+  --danger-bg: #2b1614;
+  --font: 'IBM Plex Sans', system-ui, sans-serif;
+  --mono: 'IBM Plex Mono', ui-monospace, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 15px;
+  line-height: 1.35;
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+  cursor: default;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+input,
+textarea {
+  user-select: text;
+}
+
+:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 2px;
+}
+
+.mono {
+  font-family: var(--mono);
+}
+
+.caps {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+  text-transform: uppercase;
+}
+
+.muted {
+  color: var(--text-muted);
+}
+
+.dim {
+  color: var(--text-dim);
+}
+
+.spacer {
+  flex: 1 1 24px;
+}
+
+/* Buttons */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid var(--line-strong);
+  border-radius: 10px;
+  background: transparent;
+  color: var(--text);
+  font-size: 15px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn:hover:not(:disabled) {
+  border-color: var(--line-light);
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.btn-small {
+  min-height: 38px;
+  padding: 0 14px;
+  border-radius: 9px;
+  font-size: 14px;
+}
+
+.btn-primary {
+  border: 0;
+  background: var(--text);
+  color: var(--bg);
+  font-weight: 600;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #ffffff;
+}
+
+.btn-outline {
+  border-color: var(--line-light);
+  font-weight: 500;
+}
+
+.btn-quiet {
+  border-color: transparent;
+  color: var(--text-muted);
+  font-size: 14px;
+  padding: 0 14px;
+}
+
+.btn-quiet:hover:not(:disabled) {
+  border-color: var(--line);
+  color: var(--text);
+}
+
+.btn-danger {
+  border-color: var(--danger-line);
+  color: var(--danger);
+}
+
+.btn-danger:hover:not(:disabled) {
+  border-color: var(--danger);
+}
+
+.btn-quiet.btn-danger {
+  border-color: transparent;
+  color: var(--danger);
+}
+
+.btn-quiet.btn-danger:hover:not(:disabled) {
+  border-color: var(--danger-line);
+  color: var(--danger);
+}
+
+.btn-danger-solid {
+  border: 0;
+  background: var(--danger);
+  color: #2a0f0a;
+  font-weight: 600;
+}
+
+.btn-preview {
+  border: 0;
+  background: var(--preview);
+  color: var(--preview-ink);
+  font-weight: 600;
+}
+
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.icon-btn:hover:not(:disabled) {
+  border-color: var(--line-strong);
+  color: var(--text);
+}
+
+.icon-btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+/* Fields */
+
+.field {
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: 9px;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 15px;
+}
+
+textarea.field {
+  height: auto;
+  padding: 10px 12px;
+  resize: none;
+  line-height: 1.4;
+}
+
+.field:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 1px;
+}
+
+.field:disabled {
+  opacity: 0.5;
+}
+
+select.field {
+  height: 44px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.field-label {
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
+
+input[type='range'] {
+  accent-color: var(--hall);
+  height: 28px;
+  cursor: pointer;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  accent-color: var(--hall);
+  cursor: pointer;
+}
+
+kbd {
+  padding: 2px 8px;
+  border: 1px solid var(--line-strong);
+  border-radius: 6px;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--text);
+}
+
+/* Scrollbars that do not shine in a dark booth. */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--line);
+  border-radius: 5px;
+  border: 2px solid var(--bg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--line-strong);
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .flash {
+    animation: flash 0.9s ease-out;
+  }
+}
+
+@keyframes flash {
+  0%,
+  40%,
+  80% {
+    background: var(--danger);
+    color: #2a0f0a;
+  }
+  20%,
+  60%,
+  100% {
+    background: var(--danger-bg);
+    color: var(--danger);
+  }
+}
